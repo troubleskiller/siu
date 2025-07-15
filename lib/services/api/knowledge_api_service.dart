@@ -437,6 +437,32 @@ class KnowledgeApiService {
     }
   }
 
+  /// 更新知识项
+  Future<CollectedInformationItem> updateKnowledgeItem(String itemId, String content, List<String> tags) async {
+    try {
+      final updateData = {
+        'content': content,
+        'tags': tags,
+      };
+      final response = await _apiClient.put(
+        '${ApiConstants.knowledgeItem}/$itemId',
+        data: updateData,
+      );
+      return CollectedInformationItem.fromJson(response.data);
+    } on DioException catch (e) {
+      throw _handleDioException(e);
+    }
+  }
+
+  /// 删除知识项
+  Future<void> deleteKnowledgeItem(String itemId) async {
+    try {
+      await _apiClient.delete('${ApiConstants.knowledgeItem}/$itemId');
+    } on DioException catch (e) {
+      throw _handleDioException(e);
+    }
+  }
+
   Exception _handleDioException(DioException e) {
     switch (e.type) {
       case DioExceptionType.connectionTimeout:
