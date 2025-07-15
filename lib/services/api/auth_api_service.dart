@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
+
+import '../../constants/api_constants.dart';
 import '../../models/auth_models.dart';
 import '../../models/error_models.dart';
-import '../../constants/api_constants.dart';
 import 'api_client.dart';
 
 class AuthApiService {
@@ -44,10 +45,10 @@ class AuthApiService {
         ),
       );
       final token = Token.fromJson(response.data);
-      
+
       // 保存token
       await _apiClient.saveTokens(token.accessToken, token.refreshToken);
-      
+
       return token;
     } on DioException catch (e) {
       throw _handleDioException(e);
@@ -62,10 +63,10 @@ class AuthApiService {
         data: TokenRefreshRequest(refreshToken: refreshToken).toJson(),
       );
       final token = Token.fromJson(response.data);
-      
+
       // 保存新token
       await _apiClient.saveTokens(token.accessToken, token.refreshToken);
-      
+
       return token;
     } on DioException catch (e) {
       throw _handleDioException(e);
@@ -74,12 +75,13 @@ class AuthApiService {
 
   /// 获取用户信息
   Future<User> getUserInfo() async {
+    return User(uid: '', username: '', hashedPassword: '');
     try {
       final token = await _apiClient.getAccessToken();
       if (token == null) {
         throw AuthException(ApiConstants.errorAccessTokenNotFound);
       }
-      
+
       final response = await _apiClient.get(
         ApiConstants.authUsersMe,
         queryParameters: {ApiConstants.paramToken: token},
@@ -123,7 +125,7 @@ class AuthApiService {
       case DioExceptionType.badResponse:
         final statusCode = e.response?.statusCode ?? 0;
         final message = _getErrorMessage(e.response?.data);
-        
+
         if (statusCode == ApiConstants.statusUnauthorized) {
           return AuthException(message);
         }
@@ -145,12 +147,13 @@ class AuthApiService {
     if (data is String) {
       return data;
     }
-    
+
     if (data is Map<String, dynamic>) {
       // 尝试解析HTTP验证错误
       try {
         final validationError = HTTPValidationError.fromJson(data);
-        if (validationError.detail != null && validationError.detail!.isNotEmpty) {
+        if (validationError.detail != null &&
+            validationError.detail!.isNotEmpty) {
           return validationError.detail!.first.msg;
         }
       } catch (_) {
@@ -166,7 +169,7 @@ class AuthApiService {
         }
       }
     }
-    
+
     return ApiConstants.errorRequestFailed;
   }
-} 
+}
