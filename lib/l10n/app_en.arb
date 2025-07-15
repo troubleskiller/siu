@@ -1,0 +1,57 @@
+{
+  "@@locale": "en",
+  "appTitle": "SIU Assistant",
+  "appSubtitle": "AI Knowledge Workstation",
+  
+  "navChat": "AI Chat",
+  "navKnowledge": "Knowledge Base",
+  "navTimeline": "Knowledge Timeline",
+  "navSettings": "Settings",
+  
+  "knowledgeTitle": "My Knowledge Base",
+  "searchKnowledge": "Search knowledge...",
+  "filterAll": "All",
+  "filterDoc": "Documents",
+  "filterWeb": "Web",
+  "filterImage": "Images",
+  
+  "dropZoneTitle": "Drag files here to quickly add to knowledge base",
+  "dropZoneSubtitle": "Supports PDF, TXT, JPG, PNG, web links, etc.",
+  "uploadSuccess": "File uploaded successfully! AI is processing...",
+  "uploadProcessing": "Estimated 2-3 minutes to complete intelligent analysis",
+  
+  "actionEdit": "Edit",
+  "actionDelete": "Delete",
+  "actionShare": "Share",
+  "actionChatWithAI": "Chat with AI",
+  
+  "aiSummaryTitle": "AI Smart Summary",
+  "coreFramework": "Core Framework",
+  "keyInsights": "Key Insights",
+  "practicalTools": "Practical Tools",
+  "caseStudies": "Case Studies",
+  
+  "chatHistory": "Chat History",
+  "newChat": "New Chat",
+  "chatInputPlaceholder": "Type your question...",
+  "aiGreeting": "Hello! I'm your AI knowledge assistant. I can help you analyze content in your knowledge base, answer questions, or assist you in organizing your thoughts. How can I help you?",
+  
+  "timeAgo": "{time} ago",
+  "minutes": "minutes",
+  "hours": "hours",
+  "days": "days",
+  "weeks": "weeks",
+  
+  "fileSize": "File size: {size}",
+  "addedAt": "Added at {date}",
+  
+  "errorNetworkTimeout": "Network connection timeout",
+  "errorRequestFailed": "Request failed",
+  "errorAuthFailed": "Authentication failed",
+  
+  "loading": "Loading...",
+  "noData": "No data",
+  "retry": "Retry",
+  "logout": "Logout",
+  "user": "User"
+} 

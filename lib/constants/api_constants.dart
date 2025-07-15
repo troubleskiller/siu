@@ -1,7 +1,7 @@
 /// API相关常量
 class ApiConstants {
   // ==================== 基础配置 ====================
-  static const String baseUrl = 'YOUR_API_BASE_URL'; // 替换为实际的API地址
+  static const String baseUrl = 'https://assistant.pami-ai.com/api'; // 替换为实际的API地址
   
   // ==================== 超时配置 ====================
   static const Duration connectTimeout = Duration(seconds: 30);
@@ -109,6 +109,12 @@ class ApiConstants {
   // ==================== 来源类型 ====================
   static const String sourceTypeApp = 'app';
   static const String sourceTypeWeb = 'web';
+  
+  // ==================== WebSocket配置 ====================
+  static const String wsEndpoint = '/ws/';
+  static const int wsMaxReconnectAttempts = 5;
+  static const Duration wsReconnectDelay = Duration(seconds: 2);
+  static const Duration wsHeartbeatInterval = Duration(seconds: 30);
   
   // ==================== 错误消息 ====================
   static const String errorNetworkTimeout = '网络连接超时';

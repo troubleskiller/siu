@@ -41,8 +41,34 @@ dependencies:
   # JSON序列化
   json_annotation: ^4.8.1
   
+  # GetX状态管理
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  
+  # 国际化支持
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.19.0
+
+  desktop_drop: ^0.4.4
+  path: ^1.8.3
+  
+  # UI组件
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  
+  # 工具库
+  logger: ^2.0.2
+  url_launcher: ^6.2.1
+  uuid: ^4.1.0
+  
+  # WebSocket客户端
+  web_socket_client: ^0.1.2
+  
   # 开发工具
   cupertino_icons: ^1.0.2
+  file_picker: ^10.2.0
+  flutter_share_receiver: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -67,9 +93,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -96,3 +122,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+  # 启用生成器
+  generate: true

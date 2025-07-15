@@ -64,3 +64,6 @@ vendor/bundle/
 
 # FVM Version Cache
 .fvm/
+
+# Dev directory
+/lib/dev/

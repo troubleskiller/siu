@@ -1,0 +1,204 @@
+{
+  "@@locale": "zh",
+  "appTitle": "咻咻小助理",
+  "@appTitle": {
+    "description": "应用标题"
+  },
+  "appSubtitle": "AI 知识工作站",
+  "@appSubtitle": {
+    "description": "应用副标题"
+  },
+  
+  "navChat": "AI 对话",
+  "@navChat": {
+    "description": "导航菜单 - AI对话"
+  },
+  "navKnowledge": "知识库",
+  "@navKnowledge": {
+    "description": "导航菜单 - 知识库"
+  },
+  "navTimeline": "知识动态",
+  "@navTimeline": {
+    "description": "导航菜单 - 知识动态"
+  },
+  "navSettings": "设置中心",
+  "@navSettings": {
+    "description": "导航菜单 - 设置中心"
+  },
+  
+  "knowledgeTitle": "我的知识库",
+  "@knowledgeTitle": {
+    "description": "知识库页面标题"
+  },
+  "searchKnowledge": "搜索知识...",
+  "@searchKnowledge": {
+    "description": "搜索框占位符"
+  },
+  "filterAll": "全部",
+  "@filterAll": {
+    "description": "过滤器 - 全部"
+  },
+  "filterDoc": "文档",
+  "@filterDoc": {
+    "description": "过滤器 - 文档"
+  },
+  "filterWeb": "网页",
+  "@filterWeb": {
+    "description": "过滤器 - 网页"
+  },
+  "filterImage": "图片",
+  "@filterImage": {
+    "description": "过滤器 - 图片"
+  },
+  
+  "dropZoneTitle": "拖拽文件到此处快速添加到知识库",
+  "@dropZoneTitle": {
+    "description": "拖拽区域标题"
+  },
+  "dropZoneSubtitle": "支持 PDF、TXT、JPG、PNG、网页链接等",
+  "@dropZoneSubtitle": {
+    "description": "拖拽区域副标题"
+  },
+  "uploadSuccess": "文件上传成功！AI正在处理中...",
+  "@uploadSuccess": {
+    "description": "文件上传成功提示"
+  },
+  "uploadProcessing": "预计2-3分钟完成智能解析",
+  "@uploadProcessing": {
+    "description": "文件处理中提示"
+  },
+  
+  "actionEdit": "编辑",
+  "@actionEdit": {
+    "description": "操作按钮 - 编辑"
+  },
+  "actionShare": "分享",
+  "@actionShare": {
+    "description": "操作按钮 - 分享"
+  },
+  "actionDelete": "删除",
+  "@actionDelete": {
+      "description": "操作按钮 - 删除"
+  },
+  "actionChatWithAI": "与AI对话",
+  "@actionChatWithAI": {
+    "description": "操作按钮 - 与AI对话"
+  },
+  
+  "aiSummaryTitle": "AI智能摘要",
+  "@aiSummaryTitle": {
+    "description": "AI摘要标题"
+  },
+  "coreFramework": "核心框架",
+  "@coreFramework": {
+    "description": "核心框架标题"
+  },
+  "keyInsights": "关键洞察",
+  "@keyInsights": {
+    "description": "关键洞察标题"
+  },
+  "practicalTools": "实践工具",
+  "@practicalTools": {
+    "description": "实践工具标题"
+  },
+  "caseStudies": "案例研究",
+  "@caseStudies": {
+    "description": "案例研究标题"
+  },
+  
+  "chatHistory": "对话历史",
+  "@chatHistory": {
+    "description": "对话历史标题"
+  },
+  "newChat": "新建对话",
+  "@newChat": {
+    "description": "新建对话按钮"
+  },
+  "chatInputPlaceholder": "输入你的问题...",
+  "@chatInputPlaceholder": {
+    "description": "聊天输入框占位符"
+  },
+  "aiGreeting": "你好！我是你的AI知识助手。我可以帮你分析知识库中的内容，回答问题，或者协助你整理思路。有什么我可以帮助你的吗？",
+  "@aiGreeting": {
+    "description": "AI问候语"
+  },
+  
+  "timeAgo": "{time}前",
+  "@timeAgo": {
+    "description": "时间前缀",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "minutes": "分钟",
+  "@minutes": {
+    "description": "分钟"
+  },
+  "hours": "小时",
+  "@hours": {
+    "description": "小时"
+  },
+  "days": "天",
+  "@days": {
+    "description": "天"
+  },
+  "weeks": "周",
+  "@weeks": {
+    "description": "周"
+  },
+  
+  "fileSize": "文件大小: {size}",
+  "@fileSize": {
+    "description": "文件大小显示",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "addedAt": "添加于 {date}",
+  "@addedAt": {
+    "description": "添加时间",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "errorNetworkTimeout": "网络连接超时",
+  "@errorNetworkTimeout": {
+    "description": "网络超时错误"
+  },
+  "errorRequestFailed": "请求失败",
+  "@errorRequestFailed": {
+    "description": "请求失败错误"
+  },
+  "errorAuthFailed": "认证失败",
+  "@errorAuthFailed": {
+    "description": "认证失败错误"
+  },
+  
+  "loading": "加载中...",
+  "@loading": {
+    "description": "加载中提示"
+  },
+  "noData": "暂无数据",
+  "@noData": {
+    "description": "无数据提示"
+  },
+  "retry": "重试",
+  "@retry": {
+    "description": "重试按钮"
+  },
+  "logout": "退出登录",
+  "@logout": {
+    "description": "退出登录按钮"
+  },
+  "user": "用户",
+  "@user": {
+    "description": "用户"
+  }
+} 
